@@ -1,7 +1,33 @@
 //https://www.quirksmode.org/js/keys.html
-
 var z = 1;
 const container = document.getElementById("container");
+const boneco = document.getElementById("boneco");
+document.addEventListener("keydown", function(event){
+	if (event.keyCode === 37) {
+		var i = boneco.parentElement.id;
+		if (document.getElementById(i-1).classList.contains('estrada')){
+			document.getElementById(i-1).appendChild(boneco);
+		};
+	}
+	if (event.keyCode === 38) {
+		var i = boneco.parentElement.id;
+		if (document.getElementById(i-22).classList.contains('estrada')){
+			document.getElementById(i-22).appendChild(boneco);
+		};
+	}
+	if (event.keyCode === 39) {
+		var i = boneco.parentElement.id;
+		if (document.getElementById(Number(i)+1).classList.contains('estrada')){
+			document.getElementById(Number(i)+1).appendChild(boneco);
+		};
+	}
+	if (event.keyCode === 40) {
+		var i = boneco.parentElement.id;
+		if (document.getElementById(Number(i)+22).classList.contains('estrada')){
+			document.getElementById(Number(i)+22).appendChild(boneco);
+		};
+	}
+});
 function vazio(x){
 	for(var i = 0; i < x; i++){
 		const div = document.createElement("div");
@@ -23,24 +49,22 @@ function estrada(x){
 function cidade(){
 	const div = document.createElement("div");
 	div.setAttribute('id', z);
-	div.classList.add("cidade");
+	div.classList.add("cidade", "estrada");
 	container.appendChild(div);
 	z++;
 }
 function cidadeV(){
 	const div = document.createElement("div");
 	div.setAttribute('id', z);
-	div.classList.add("cidadeV");
+	div.classList.add("cidadeV", "estrada");
 	container.appendChild(div);
 	z++;
-	const boneco = document.createElement("img");
-	boneco.setAttribute('src', "img/boneco.png");
 	div.appendChild(boneco);
 }
 function ginasio(){
 	const div = document.createElement("div");
 	div.setAttribute('id', z);
-	div.classList.add("ginasio");
+	div.classList.add("ginasio", "estrada");
 	container.appendChild(div);
 	z++;
 }
