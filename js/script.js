@@ -1,3 +1,5 @@
+//https://www.quirksmode.org/js/keys.html
+
 var z = 1;
 const container = document.getElementById("container");
 function vazio(x){
@@ -25,6 +27,16 @@ function cidade(){
 	container.appendChild(div);
 	z++;
 }
+function cidadeV(){
+	const div = document.createElement("div");
+	div.setAttribute('id', z);
+	div.classList.add("cidadeV");
+	container.appendChild(div);
+	z++;
+	const boneco = document.createElement("img");
+	boneco.setAttribute('src', "img/boneco.png");
+	div.appendChild(boneco);
+}
 function ginasio(){
 	const div = document.createElement("div");
 	div.setAttribute('id', z);
@@ -32,24 +44,4 @@ function ginasio(){
 	container.appendChild(div);
 	z++;
 }
-
-vazio(23);ginasio();vazio(4);cidade();vazio(16);estrada(1);vazio(4);estrada(1);vazio(16);estrada(1);vazio(4);estrada(1);vazio(16);estrada(1);vazio(4);estrada(1);vazio(4);cidade();estrada(4);cidade();vazio(6);estrada(1);vazio(4);estrada(1);vazio(4);estrada(1);vazio(4);estrada(1);vazio(6);estrada(1);vazio(4);estrada(1);vazio(4);estrada(1);vazio(4);estrada(1);vazio(6);cidade();estrada(4);cidade();estrada(4);cidade();estrada(4);cidade();estrada(3);ginasio();vazio(7);estrada(1);vazio(13);estrada(1);vazio(7);estrada(1);vazio(13);estrada(1);vazio(7);estrada(1);vazio(13);estrada(1);vazio(7);estrada(1);vazio(3);cidade();estrada(9);cidade();vazio(7);estrada(1);vazio(3);estrada(1);vazio(17);estrada(1);vazio(3);estrada(1);vazio(17);estrada(1);vazio(3);estrada(1);vazio(17);estrada(1);vazio(3);estrada(1);vazio(17);estrada(1);vazio(3);estrada(1);vazio(12);ginasio();estrada(4);cidade();estrada(3);cidade();estrada(4);cidade();estrada(4);ginasio();vazio(23);
-
-
-
-
-
-
-
-//for{
-	//Z; func(4); #; func2(16);
-	//func2(44);
-	//func2(6); #; func(4);# func2(5);
-	//func2(44);
-	//#; func(4); A; func(4); #; func(4); #; func(4); X;
-	//func2(44);
-	//func2(8); #; func(12); #
-	//func2(88);
-	//X; func(4); #; func(4); #; func(4); #; func(4); R;
-
-//}
+vazio(23);ginasio();vazio(4);cidade();vazio(16);estrada(1);vazio(4);estrada(1);vazio(16);estrada(1);vazio(4);estrada(1);vazio(16);estrada(1);vazio(4);estrada(1);vazio(4);cidade();estrada(4);cidade();vazio(6);estrada(1);vazio(4);estrada(1);vazio(4);estrada(1);vazio(4);estrada(1);vazio(6);estrada(1);vazio(4);estrada(1);vazio(4);estrada(1);vazio(4);estrada(1);vazio(6);cidade();estrada(4);cidadeV();estrada(4);cidade();estrada(4);cidade();estrada(3);ginasio();vazio(7);estrada(1);vazio(13);estrada(1);vazio(7);estrada(1);vazio(13);estrada(1);vazio(7);estrada(1);vazio(13);estrada(1);vazio(7);estrada(1);vazio(3);cidade();estrada(9);cidade();vazio(7);estrada(1);vazio(3);estrada(1);vazio(17);estrada(1);vazio(3);estrada(1);vazio(17);estrada(1);vazio(3);estrada(1);vazio(17);estrada(1);vazio(3);estrada(1);vazio(17);estrada(1);vazio(3);estrada(1);vazio(12);ginasio();estrada(4);cidade();estrada(3);cidade();estrada(4);cidade();estrada(4);ginasio();vazio(23);
