@@ -1,30 +1,88 @@
 //https://www.quirksmode.org/js/keys.html
 var z = 1;
+var x = 1;
 const container = document.getElementById("container");
 const boneco = document.getElementById("boneco");
+const badgeList = document.getElementById("badgeList");
 document.addEventListener("keydown", function(event){
 	if (event.keyCode === 37) {
 		var i = boneco.parentElement.id;
 		if (document.getElementById(i-1).classList.contains('estrada')){
 			document.getElementById(i-1).appendChild(boneco);
+			if (boneco.parentElement.classList.contains('cidade')){
+				console.log("Catupirou")
+				boneco.parentElement.classList.add('cidadeV');
+				boneco.parentElement.classList.remove('cidade');
+			}
+			if (boneco.parentElement.classList.contains('ginasio')){
+				boneco.parentElement.classList.add('ginasioV');
+				boneco.parentElement.classList.remove('ginasio');
+				const insignia = document.createElement("img");
+				insignia.setAttribute('src', "img/insignia_"+x+".png");
+				insignia.classList.add("badge");
+				badgeList.appendChild(insignia);
+				x++;
+			}
 		};
 	}
 	if (event.keyCode === 38) {
 		var i = boneco.parentElement.id;
 		if (document.getElementById(i-22).classList.contains('estrada')){
 			document.getElementById(i-22).appendChild(boneco);
+			if (boneco.parentElement.classList.contains('cidade')){
+				console.log("Catupirou")
+				boneco.parentElement.classList.add('cidadeV');
+				boneco.parentElement.classList.remove('cidade');
+			}
+			if (boneco.parentElement.classList.contains('ginasio')){
+				boneco.parentElement.classList.add('ginasioV');
+				boneco.parentElement.classList.remove('ginasio');
+				const insignia = document.createElement("img");
+				insignia.setAttribute('src', "img/insignia_"+x+".png");
+				insignia.classList.add("badge");
+				badgeList.appendChild(insignia);
+				x++;
+			}
 		};
 	}
 	if (event.keyCode === 39) {
 		var i = boneco.parentElement.id;
 		if (document.getElementById(Number(i)+1).classList.contains('estrada')){
 			document.getElementById(Number(i)+1).appendChild(boneco);
+			if (boneco.parentElement.classList.contains('cidade')){
+				console.log("Catupirou")
+				boneco.parentElement.classList.add('cidadeV');
+				boneco.parentElement.classList.remove('cidade');
+			}
+			if (boneco.parentElement.classList.contains('ginasio')){
+				boneco.parentElement.classList.add('ginasioV');
+				boneco.parentElement.classList.remove('ginasio');
+				const insignia = document.createElement("img");
+				insignia.setAttribute('src', "img/insignia_"+x+".png");
+				insignia.classList.add("badge");
+				badgeList.appendChild(insignia);
+				x++;
+			}
 		};
 	}
 	if (event.keyCode === 40) {
 		var i = boneco.parentElement.id;
 		if (document.getElementById(Number(i)+22).classList.contains('estrada')){
 			document.getElementById(Number(i)+22).appendChild(boneco);
+			if (boneco.parentElement.classList.contains('cidade')){
+				console.log("Catupirou")
+				boneco.parentElement.classList.add('cidadeV');
+				boneco.parentElement.classList.remove('cidade');
+			}
+			if (boneco.parentElement.classList.contains('ginasio')){
+				boneco.parentElement.classList.add('ginasioV');
+				boneco.parentElement.classList.remove('ginasio');
+				const insignia = document.createElement("img");
+				insignia.setAttribute('src', "img/insignia_"+x+".png");
+				insignia.classList.add("badge");
+				badgeList.appendChild(insignia);
+				x++;
+			}
 		};
 	}
 });
