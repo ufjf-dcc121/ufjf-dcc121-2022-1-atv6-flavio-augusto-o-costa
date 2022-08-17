@@ -58,7 +58,15 @@ document.addEventListener("keydown", function(event){
 				insignia.classList.add("badge");
 				badgeList.appendChild(insignia);
 				j++;
-				if (j === 5){
+			}
+			if (boneco.parentElement.classList.contains('ginasioF')){
+				if (j === 4){
+					boneco.parentElement.classList.add('ginasioV');
+					boneco.parentElement.classList.remove('ginasio');
+					const insignia = document.createElement("img");
+					insignia.setAttribute('src', "img/insignia_"+j+".png");
+					insignia.classList.add("badge");
+					badgeList.appendChild(insignia);
 					alert("Você ganhou!!");
 				}
 			}
@@ -99,7 +107,15 @@ document.addEventListener("keydown", function(event){
 				insignia.classList.add("badge");
 				badgeList.appendChild(insignia);
 				j++;
-				if (j === 5){
+			}
+			if (boneco.parentElement.classList.contains('ginasioF')){
+				if (j === 4){
+					boneco.parentElement.classList.add('ginasioV');
+					boneco.parentElement.classList.remove('ginasio');
+					const insignia = document.createElement("img");
+					insignia.setAttribute('src', "img/insignia_"+j+".png");
+					insignia.classList.add("badge");
+					badgeList.appendChild(insignia);
 					alert("Você ganhou!!");
 				}
 			}
@@ -140,7 +156,15 @@ document.addEventListener("keydown", function(event){
 				insignia.classList.add("badge");
 				badgeList.appendChild(insignia);
 				j++;
-				if (j === 5){
+			}
+			if (boneco.parentElement.classList.contains('ginasioF')){
+				if (j === 4){
+					boneco.parentElement.classList.add('ginasioV');
+					boneco.parentElement.classList.remove('ginasio');
+					const insignia = document.createElement("img");
+					insignia.setAttribute('src', "img/insignia_"+j+".png");
+					insignia.classList.add("badge");
+					badgeList.appendChild(insignia);
 					alert("Você ganhou!!");
 				}
 			}
@@ -181,7 +205,15 @@ document.addEventListener("keydown", function(event){
 				insignia.classList.add("badge");
 				badgeList.appendChild(insignia);
 				j++;
-				if (j === 5){
+			}
+			if (boneco.parentElement.classList.contains('ginasioF')){
+				if (j === 4){
+					boneco.parentElement.classList.add('ginasioV');
+					boneco.parentElement.classList.remove('ginasio');
+					const insignia = document.createElement("img");
+					insignia.setAttribute('src', "img/insignia_"+j+".png");
+					insignia.classList.add("badge");
+					badgeList.appendChild(insignia);
 					alert("Você ganhou!!");
 				}
 			}
@@ -249,4 +281,11 @@ function ginasio(){
 	container.appendChild(div);
 	z++;
 }
-vazio(23);ginasio();vazio(4);cidade();vazio(16);estrada(1);vazio(4);estrada(1);vazio(16);estrada(1);vazio(4);estrada(1);vazio(16);estrada(1);vazio(4);estrada(1);vazio(4);cidade();estrada(4);cidade();vazio(6);estrada(1);vazio(4);estrada(1);vazio(4);estrada(1);vazio(4);estrada(1);vazio(6);estrada(1);vazio(4);estrada(1);vazio(4);estrada(1);vazio(4);estrada(1);vazio(6);cidade();estrada(4);cidadeV();estrada(4);cidade();estrada(4);cidade();estrada(3);ginasio();vazio(7);estrada(1);vazio(13);estrada(1);vazio(7);estrada(1);vazio(13);estrada(1);vazio(7);estrada(1);vazio(13);estrada(1);vazio(7);estrada(1);vazio(3);cidade();estrada(9);cidade();vazio(7);estrada(1);vazio(3);estrada(1);vazio(17);estrada(1);vazio(3);estrada(1);vazio(17);estrada(1);vazio(3);estrada(1);vazio(17);estrada(1);vazio(3);estrada(1);vazio(17);estrada(1);vazio(3);estrada(1);vazio(12);ginasio();estrada(4);cidade();estrada(3);cidade();estrada(4);cidade();estrada(4);ginasio();vazio(23);
+function ginasioF(){
+	const div = document.createElement("div");
+	div.setAttribute('id', z);
+	div.classList.add("ginasioF", "estrada");
+	container.appendChild(div);
+	z++;
+}
+vazio(23);ginasioF();vazio(4);cidade();vazio(16);estrada(1);vazio(4);estrada(1);vazio(16);estrada(1);vazio(4);estrada(1);vazio(16);estrada(1);vazio(4);estrada(1);vazio(4);cidade();estrada(4);cidade();vazio(6);estrada(1);vazio(4);estrada(1);vazio(4);estrada(1);vazio(4);estrada(1);vazio(6);estrada(1);vazio(4);estrada(1);vazio(4);estrada(1);vazio(4);estrada(1);vazio(6);cidade();estrada(4);cidadeV();estrada(4);cidade();estrada(4);cidade();estrada(3);ginasio();vazio(7);estrada(1);vazio(13);estrada(1);vazio(7);estrada(1);vazio(13);estrada(1);vazio(7);estrada(1);vazio(13);estrada(1);vazio(7);estrada(1);vazio(3);cidade();estrada(9);cidade();vazio(7);estrada(1);vazio(3);estrada(1);vazio(17);estrada(1);vazio(3);estrada(1);vazio(17);estrada(1);vazio(3);estrada(1);vazio(17);estrada(1);vazio(3);estrada(1);vazio(17);estrada(1);vazio(3);estrada(1);vazio(12);ginasio();estrada(4);cidade();estrada(3);cidade();estrada(4);cidade();estrada(4);ginasio();vazio(23);

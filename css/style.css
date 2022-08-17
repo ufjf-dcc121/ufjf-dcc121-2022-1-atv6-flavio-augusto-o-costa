@@ -68,6 +68,13 @@ body
   background-size: contain, cover;
   background-repeat: no-repeat;
 }
+.ginasioF
+{
+  background-image: url("../img/ginasio.png"), url("../img/estrada.png");
+  box-shadow: inset 1px 1px;
+  background-size: contain, cover;
+  background-repeat: no-repeat;
+}
 .ginasioV
 {
   background-image: url("../img/ginasio.png"), url("../img/estrada.png");
