@@ -28,12 +28,12 @@ function cidade(){
 function ginasio(){
 	const div = document.createElement("div");
 	div.setAttribute('id', z);
-	div.classList.add("jogador");
+	div.classList.add("ginasio");
 	container.appendChild(div);
 	z++;
 }
 
-vazio(23);ginasio();vazio(4);ginasio();vazio(16);estrada(1);vazio(4);estrada(1);vazio(16);estrada(1);vazio(4);estrada(1);vazio(16);estrada(1);vazio(4);estrada(1);vazio(4);ginasio();estrada(4);ginasio();vazio(6);estrada(1);vazio(4);estrada(1);vazio(4);estrada(1);vazio(4);estrada(1);vazio(6);estrada(1);vazio(4);estrada(1);vazio(4);estrada(1);vazio(4);estrada(1);vazio(6);ginasio();estrada(4);ginasio();estrada(4);ginasio();estrada(4);ginasio();estrada(3);ginasio();vazio(7);estrada(1);vazio(13);estrada(1);vazio(7);estrada(1);vazio(13);estrada(1);vazio(7);estrada(1);vazio(13);estrada(1);vazio(7);estrada(1);vazio(3);ginasio();estrada(9);ginasio();vazio(7);estrada(1);vazio(3);estrada(1);vazio(17);estrada(1);vazio(3);estrada(1);vazio(17);estrada(1);vazio(3);estrada(1);vazio(17);estrada(1);vazio(3);estrada(1);vazio(17);estrada(1);vazio(3);estrada(1);vazio(12);ginasio();estrada(4);ginasio();estrada(3);ginasio();estrada(4);ginasio();estrada(4);ginasio();vazio(23);
+vazio(23);ginasio();vazio(4);cidade();vazio(16);estrada(1);vazio(4);estrada(1);vazio(16);estrada(1);vazio(4);estrada(1);vazio(16);estrada(1);vazio(4);estrada(1);vazio(4);cidade();estrada(4);cidade();vazio(6);estrada(1);vazio(4);estrada(1);vazio(4);estrada(1);vazio(4);estrada(1);vazio(6);estrada(1);vazio(4);estrada(1);vazio(4);estrada(1);vazio(4);estrada(1);vazio(6);cidade();estrada(4);cidade();estrada(4);cidade();estrada(4);cidade();estrada(3);ginasio();vazio(7);estrada(1);vazio(13);estrada(1);vazio(7);estrada(1);vazio(13);estrada(1);vazio(7);estrada(1);vazio(13);estrada(1);vazio(7);estrada(1);vazio(3);cidade();estrada(9);cidade();vazio(7);estrada(1);vazio(3);estrada(1);vazio(17);estrada(1);vazio(3);estrada(1);vazio(17);estrada(1);vazio(3);estrada(1);vazio(17);estrada(1);vazio(3);estrada(1);vazio(17);estrada(1);vazio(3);estrada(1);vazio(12);ginasio();estrada(4);cidade();estrada(3);cidade();estrada(4);cidade();estrada(4);ginasio();vazio(23);
 
 
 

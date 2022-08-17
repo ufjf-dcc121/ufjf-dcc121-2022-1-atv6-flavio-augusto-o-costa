@@ -24,8 +24,17 @@
   background-image: url("../img/estrada.png");
   box-shadow: inset 1px 1px;
 }
-.jogador
+.ginasio
 {
-  background-color: #836B32;
-  box-shadow: inset 2px 2px 0 rgba(255, 255, 255, 0.05), inset -2px -2px 0 #665235;
+  background-image: url("../img/ginasio.png"), url("../img/estrada.png");
+  box-shadow: inset 1px 1px;
+  background-size: contain, cover;
+  background-repeat: no-repeat;
+}
+.cidade
+{
+  background-image: url("../img/cidade.png"), url("../img/estrada.png");
+  box-shadow: inset 1px 1px;
+  background-size: contain, cover;
+  background-repeat: no-repeat;
 }
