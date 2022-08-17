@@ -1,0 +1,31 @@
+#container 
+{
+  position: sticky;
+  top: 1em;
+  width: 50vw;
+  height: 50vw;
+  min-width: 300px;
+  min-height: 300px;
+  overflow: hidden;
+  border: 10px solid #6D5720;
+  border-radius: 12px;
+  display: grid;
+  grid-template-columns: repeat(22, 1fr);
+  grid-template-rows: repeat(19, 1fr);
+  text-align: center;
+}
+.vazio
+{
+  background-image: url("../img/vazio.png");
+  box-shadow: inset 1px 1px;
+}
+.estrada
+{
+  background-image: url("../img/estrada.png");
+  box-shadow: inset 1px 1px;
+}
+.jogador
+{
+  background-color: #836B32;
+  box-shadow: inset 2px 2px 0 rgba(255, 255, 255, 0.05), inset -2px -2px 0 #665235;
+}
