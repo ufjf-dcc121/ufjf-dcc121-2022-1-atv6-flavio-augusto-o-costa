@@ -1,4 +1,3 @@
-//https://www.quirksmode.org/js/keys.html
 var z = 1;
 var j = 1;
 var k = 0
@@ -29,7 +28,6 @@ document.addEventListener("keydown", function(event){
 		if (document.getElementById(i-1).classList.contains('estrada')){
 			document.getElementById(i-1).appendChild(boneco);
 			if (boneco.parentElement.classList.contains('cidade')){
-				console.log("Catupirou")
 				boneco.parentElement.classList.add('cidadeV');
 				boneco.parentElement.classList.remove('cidade');
 				div = document.createElement("div");
@@ -60,6 +58,9 @@ document.addEventListener("keydown", function(event){
 				insignia.classList.add("badge");
 				badgeList.appendChild(insignia);
 				j++;
+				if (j === 5){
+					alert("Você ganhou!!");
+				}
 			}
 		};
 	}
@@ -68,7 +69,6 @@ document.addEventListener("keydown", function(event){
 		if (document.getElementById(i-22).classList.contains('estrada')){
 			document.getElementById(i-22).appendChild(boneco);
 			if (boneco.parentElement.classList.contains('cidade')){
-				console.log("Catupirou")
 				boneco.parentElement.classList.add('cidadeV');
 				boneco.parentElement.classList.remove('cidade');
 				div = document.createElement("div");
@@ -99,6 +99,9 @@ document.addEventListener("keydown", function(event){
 				insignia.classList.add("badge");
 				badgeList.appendChild(insignia);
 				j++;
+				if (j === 5){
+					alert("Você ganhou!!");
+				}
 			}
 		};
 	}
@@ -107,7 +110,6 @@ document.addEventListener("keydown", function(event){
 		if (document.getElementById(Number(i)+1).classList.contains('estrada')){
 			document.getElementById(Number(i)+1).appendChild(boneco);
 			if (boneco.parentElement.classList.contains('cidade')){
-				console.log("Catupirou")
 				boneco.parentElement.classList.add('cidadeV');
 				boneco.parentElement.classList.remove('cidade');
 				div = document.createElement("div");
@@ -138,6 +140,9 @@ document.addEventListener("keydown", function(event){
 				insignia.classList.add("badge");
 				badgeList.appendChild(insignia);
 				j++;
+				if (j === 5){
+					alert("Você ganhou!!");
+				}
 			}
 		};
 	}
@@ -146,7 +151,6 @@ document.addEventListener("keydown", function(event){
 		if (document.getElementById(Number(i)+22).classList.contains('estrada')){
 			document.getElementById(Number(i)+22).appendChild(boneco);
 			if (boneco.parentElement.classList.contains('cidade')){
-				console.log("Catupirou")
 				boneco.parentElement.classList.add('cidadeV');
 				boneco.parentElement.classList.remove('cidade');
 				div = document.createElement("div");
@@ -177,6 +181,9 @@ document.addEventListener("keydown", function(event){
 				insignia.classList.add("badge");
 				badgeList.appendChild(insignia);
 				j++;
+				if (j === 5){
+					alert("Você ganhou!!");
+				}
 			}
 		};
 	}
