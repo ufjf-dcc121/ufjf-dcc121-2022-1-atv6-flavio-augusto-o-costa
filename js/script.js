@@ -1,3 +1,4 @@
+document.onload = alert("Use as setas do teclado para se movimentar!");
 var z = 1;
 var j = 1;
 var k = 0
